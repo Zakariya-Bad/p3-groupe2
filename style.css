@@ -8,6 +8,7 @@
 
   /* Fonts */
   --main-font: "Inter", sans-serif;
+
   /* Text sizes */
   --main-text-size: 16px;
   --title-text-size: 32px;
@@ -19,18 +20,24 @@
 
   /* Widths and heights */
   --normal-card-width: 30%;
+  --prob-card-width: 75%;
   --large-card-width: 45%;
-  --section-width: 1200px;
+  --section-width: 1080px;
 
   /* Others (shadows etc...) */
   --card-shadow: 0px 0px 6px #09090950;
   --round-radius: 16px;
 }
 
+.padding {
+
+  padding-bottom: 80px;
+}
+
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
   font-family: var(--main-font);
   font-weight: var(--regular-text-weight);
   font-size: var(--main-text-size);
@@ -41,13 +48,15 @@
 .row {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 18px;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
+  justify-content: center;
 }
 
 .wrap {
@@ -78,17 +87,43 @@
 
 .bold-text {
   font-weight: var(--semibold-text-weight);
+  text-align: start;
 }
 
 .card-frame {
   width: var(--normal-card-width);
   border-radius: var(--round-radius);
   box-shadow: var(--card-shadow);
-  padding: 12px;
+  padding: 20px;
+
+}
+
+.colEngagement {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-engagement {
+  width: 100%;
+  border-radius: var(--round-radius);
+  box-shadow: var(--card-shadow);
+  padding: 10%;
+
 }
 
 .large-card {
   width: var(--large-card-width);
+}
+
+.prob-card-frame {
+  width: var(--prob-card-width);
+  border-radius: var(--round-radius);
+  box-shadow: var(--card-shadow);
+  padding: 35px;
+  align-items: center;
+
 }
 
 .round-image {
@@ -101,4 +136,109 @@
   border-radius: var(--round-radius);
   padding: 12px 24px;
   width: fit-content;
+}
+
+nav {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  background-color: var(--cta-color);
+  padding: 40px;
+
+  a {
+    color: var(--secondary-bg-color);
+  }
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: var(--bold-text-weight);
+}
+
+#hero {
+  .container {
+    background-color: var(--secondary-bg-color);
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+
+
+    p {
+      font-size: 22px;
+    }
+
+    .row {
+      gap: 100px;
+
+      .col {
+        gap: 30px;
+        padding-left: 100px;
+        justify-content: center;
+      }
+    }
+  }
+
+
+}
+
+.-text {
+  color: var(--cta-color);
+  font-size: 35px;
+}
+
+#problematique {
+
+
+  p,
+  span {
+    font-size: 24px;
+  }
+}
+
+#promises {
+  background-color: var(--secondary-bg-color);
+
+  img {
+    width: 100px;
+  }
+
+  .card-frame {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.testimonial {
+  display: flex;
+  padding: 10px;
+  gap: 30px;
+
+  p,
+  span {
+    text-align: start;
+  }
+}
+
+.fa-solid {
+  color: #F9D51D;
+}
+
+.img-size {
+  width: 360px;
+  height: 480px;
+
+}
+
+.logo-size {
+  width: 40px;
+}
+
+footer {
+  background-color: var(--cta-color);
+  display: flex;
+  gap: 50px;
+}
+
+.nav-footer {
+  flex-direction: column;
 }

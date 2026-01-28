@@ -21,19 +21,23 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="icon" href="assets/logoo.png">
+
 </head>
 
 <body>
   <header>
     <!-- Nav bar -->
-    <nav>
+    <nav class="centered">
       <!-- WIP: Make the nav in Figma and reproduce it here somehow -->
-      Accueil
+      <a href="/index.html">Accueil</a>
+      <img src="assets/logoo.png" class="logo-size" alt="image logo">
+      <!-- <img src="logo" alt=""> -->
       <a href="/doc.html">Documentation</a>
     </nav>
 
     <!-- Section HERO -->
-    <section id="hero">
+    <section id="hero" class="padding">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -43,11 +47,11 @@
               Découvrez une application innovante qui vous permettra au mieux d'aider les enfants dyslexiques de votre
               entourage !
             </p>
-            <a href="doc.html" class="cta-button">
+            <a href="" class="cta-button">
               Télécharger
             </a>
           </div>
-          <img src="" alt="image de téléphone">
+          <img src="assets/Télhero.png" alt="image de téléphone">
         </div>
       </div>
     </section>
@@ -56,21 +60,21 @@
 
   <main>
     <!-- Section Problèmatique -->
-    <section id="problem">
+    <section id="problem" class="padding">
       <div class="container">
         <div class="row">
 
           <div class="col">
-            <div class="card-frame">
-              <p class="bold-text">Entre 3 et 5% des enfants ont un trouble DYS !</p>
+            <div class="prob-card-frame">
+              <p class="bold-text"><span class="-text">5% <br></span> des enfants ont un trouble DYS !</p>
             </div>
-            <div class="card-frame">
-              <p class="bold-text">1 élève par classe !</p>
+            <div class="prob-card-frame">
+              <p class="bold-text"><span class="-text">1 <br></span> élève par classe !</p>
             </div>
 
           </div>
 
-          <div class="col">
+          <div class="col" id="problematique">
             <h2 class="section-title">
               Notre Problèmatique
             </h2>
@@ -78,7 +82,7 @@
             <p>
               Saviez-vous que
               <span class="bold-text">3 à 5% des enfants</span>
-              étaient atteints d'un syndrome DYS ? Cela représente près d'
+              étaient atteints d'un syndrome DYS ?<br>Cela représente près d'
               <span class="bold-text">un élève par classe</span>
               mais peu d'enseignants ou parents savent comment y réagir.
             </p>
@@ -88,7 +92,7 @@
     </section>
 
     <!-- Section "Ce que l'on propose" -->
-    <section id="promises">
+    <section id="promises" class="padding">
       <div class="container">
         <div class="col centered">
           <h2 class="section-title">
@@ -97,25 +101,25 @@
 
           <div class="row wrap">
             <div class="card-frame col large-card">
-              <img src="undefined" alt="" class="round-image">
+              <img src="assets/Service1.png" alt="" class="round-image">
               <p>
                 Accès à des cours adaptés proposés par les autres utilisateurs
               </p>
             </div>
             <div class="card-frame col large-card">
-              <img src="undefined" alt="" class="round-image">
+              <img src="assets/Service2.png" alt="" class=" round-image">
               <p>
                 Créer votre propre adaptation de cours pour aider les autres utilisateurs dans le besoin
               </p>
             </div>
             <div class="card-frame col large-card">
-              <img src="undefined" alt="" class="round-image">
+              <img src="assets/Service3.png" alt="" class="round-image">
               <p>
                 Un système de commentaire pour recueillir les avis sur vos cours ou commenter ceux des autres
               </p>
             </div>
             <div class="card-frame col large-card">
-              <img src="undefined" alt="" class="round-image">
+              <img src="assets/Service4.png" alt="" class="round-image">
               <p>
                 Un système de likes pour voir les adaptations les plus populaires, ajouter à vos favoris et montrer
                 votre
@@ -128,7 +132,7 @@
     </section>
 
     <!-- Section Temoignage -->
-    <section id="testimonies">
+    <section id="testimonies" class="padding">
       <div class="container">
         <div class="col centered">
           <h2 class="section-title">
@@ -150,8 +154,8 @@
                 cette appli m'a beaucoup aidé. ”
               </p>
 
-              <div class="col">
-                <img src="undefined" alt="" class="round-image">
+              <div class="testimonial">
+                <img src="assets/Comment1.png" alt="" class="round-image">
                 <div class="col">
                   <span class="bold-text">
                     Jean Dupont
@@ -176,8 +180,8 @@
                 dyslexiques. Je la recommande ! ”
               </p>
 
-              <div class="col">
-                <img src="undefined" alt="" class="round-image">
+              <div class="testimonial">
+                <img src="assets/Comment2.png" alt="" class="round-image">
                 <div class="col">
                   <span class="bold-text">
                     Elise Legrand
@@ -202,8 +206,8 @@
                 professeurs en difficulté. ”
               </p>
 
-              <div class="col">
-                <img src="undefined" alt="" class="round-image">
+              <div class="testimonial">
+                <img src="assets/Comment3.png" alt="" class="round-image">
                 <div class="col">
                   <span class="bold-text">
                     Sabine Lafol
@@ -220,7 +224,7 @@
     </section>
 
     <!-- Section Engagements -->
-    <section id="engagements">
+    <section id="engagements" class="padding">
       <div class="container">
         <div class="col centered">
           <h2 class="section-title">
@@ -228,39 +232,48 @@
           </h2>
 
           <!-- TODO: trouver comment faire la bulle en haut à gauche de chaque card -->
-          <div class="row wrap">
-            <div class="card-frame col large-card">
+          <div class="row test">
+            <div class="colEngagement">
 
-              <p>
-                <span class="bold-text">
-                  Une inscription rapide et gratuite
-                </span>
-                pour les professeurs, les parents et les AESH.
-              </p>
+              <div class="card-engagement col ">
+
+                <p>
+                  <span class="bold-text">
+                    Une inscription rapide et gratuite
+                  </span>
+                  pour les professeurs, les parents et les AESH.
+                </p>
+              </div>
+
+              <div class="card-engagement col ">
+                <p>
+                  <span class="bold-text">
+                    Tout le programme
+                  </span>
+                  pour chaque niveau couvert, de la primaire au secondaire
+                </p>
+              </div>
             </div>
-            <div class="card-frame col large-card">
-              <p>
-                <span class="bold-text">
-                  Tout le programme
-                </span>
-                pour chaque niveau couvert, de la primaire au secondaire
-              </p>
-            </div>
-            <div class="card-frame col large-card">
-              <p>
-                <span class="bold-text">
-                  Une application ultra intuitive, accessible
-                </span>
-                aux profils novices comme avancés
-              </p>
-            </div>
-            <div class="card-frame col large-card">
-              <p>
-                <span class="bold-text">
-                  De multiples méthodes
-                </span>
-                pour chaque cours et pour n'importe quel niveau
-              </p>
+            <img src="assets/Image-engagements.png" alt="" srcset="">
+            <div class="colEngagement">
+
+              <div class="card-engagement col ">
+                <p>
+                  <span class="bold-text">
+                    Une application ultra intuitive, accessible
+                  </span>
+                  aux profils novices comme avancés
+                </p>
+              </div>
+
+              <div class="card-engagement col ">
+                <p>
+                  <span class="bold-text">
+                    De multiples méthodes
+                  </span>
+                  pour chaque cours et pour n'importe quel niveau
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +282,7 @@
   </main>
 
   <!-- Section CTA -->
-  <section id="cta-footer">
+  <section id="cta-footer" class="padding">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -279,33 +292,49 @@
           </p>
           <div class="row">
             <a href="" class="fake-button">
-              <img src="undefined" alt="Google play store">
+              <img src="assets/playstore.png" alt="Google play store">
             </a>
             <a href="" class="fake-button">
-              <img src="undefined" alt="App store">
+              <img src="assets/appstore.png" alt="App store">
             </a>
           </div>
         </div>
 
-        <img src="" alt="image de téléphone qui vole">
+        <img src="assets/iPhone 16.png" class="img-size" alt="image de téléphone qui vole">
       </div>
     </div>
   </section>
+
+  <!-- WIP: Make the footer in Figma and reproduce it here somehow -->
+
+
   <footer>
-    <!-- WIP: Make the footer in Figma and reproduce it here somehow -->
 
-  </footer>
-  <div class="nav-footer">
-    <a href="">Documentation</a>
-    <a href="">Problèmatique</a>
-    <a href="">Ce qu'on propose</a>
-    <a href="">Témoignages</a>
-    <a href="">Engagements</a>
-  </div>
-  <div class="contact">
-    <h2>Contact</h2>
+    <div class="nav-footer">
+      <a href="">Documentation</a>
+      <a href="">Problèmatique</a>
+      <a href="">Ce que l'on propose</a>
+      <a href="">Témoignages</a>
+      <a href="">Engagements</a>
+    </div>
+    <divf class="formulaire">
+      <h2>Contact</h2>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" required placeholder="email">
+        <label for="message">Message</label>
+        <textarea name="Message" id="Message">Message</textarea>
+        <button>Envoyer</button>
+      </form>
 
-  </div>
+      </div>
+      <div class="reseaux">
+        <h2>Nos réseaux sociaux</h2>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
   </footer>
 </body>
 

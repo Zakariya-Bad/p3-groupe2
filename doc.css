@@ -1,1 +1,34 @@
 /* Le code CSS spécifique à la page de documentation */
+
+p {
+
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h1 {
+
+    text-align: center;
+}
+
+h2 {
+    margin: 100px;
+    text-align: center;
+}
+
+header {
+    height: 100vh;
+    background-image: url(assets/heroDoc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

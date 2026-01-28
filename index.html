@@ -1,16 +1,312 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
 
-  <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Projet - Page d'accueil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" type="text/javascript"></script>
+
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <!-- Nav bar -->
+    <nav>
+      <!-- WIP: Make the nav in Figma and reproduce it here somehow -->
+      Accueil
+      <a href="/doc.html">Documentation</a>
+    </nav>
+
+    <!-- Section HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Un DYS, DIX solutions</h1>
+            <h2>Parent, professeur ou AESH</h2>
+            <p>
+              Découvrez une application innovante qui vous permettra au mieux d'aider les enfants dyslexiques de votre
+              entourage !
+            </p>
+            <a href="doc.html" class="cta-button">
+              Télécharger
+            </a>
+          </div>
+          <img src="" alt="image de téléphone">
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+    <!-- Section Problèmatique -->
+    <section id="problem">
+      <div class="container">
+        <div class="row">
+
+          <div class="col">
+            <div class="card-frame">
+              <p class="bold-text">Entre 3 et 5% des enfants ont un trouble DYS !</p>
+            </div>
+            <div class="card-frame">
+              <p class="bold-text">1 élève par classe !</p>
+            </div>
+
+          </div>
+
+          <div class="col">
+            <h2 class="section-title">
+              Notre Problèmatique
+            </h2>
+
+            <p>
+              Saviez-vous que
+              <span class="bold-text">3 à 5% des enfants</span>
+              étaient atteints d'un syndrome DYS ? Cela représente près d'
+              <span class="bold-text">un élève par classe</span>
+              mais peu d'enseignants ou parents savent comment y réagir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section "Ce que l'on propose" -->
+    <section id="promises">
+      <div class="container">
+        <div class="col centered">
+          <h2 class="section-title">
+            Ce que l'on propose
+          </h2>
+
+          <div class="row wrap">
+            <div class="card-frame col large-card">
+              <img src="undefined" alt="" class="round-image">
+              <p>
+                Accès à des cours adaptés proposés par les autres utilisateurs
+              </p>
+            </div>
+            <div class="card-frame col large-card">
+              <img src="undefined" alt="" class="round-image">
+              <p>
+                Créer votre propre adaptation de cours pour aider les autres utilisateurs dans le besoin
+              </p>
+            </div>
+            <div class="card-frame col large-card">
+              <img src="undefined" alt="" class="round-image">
+              <p>
+                Un système de commentaire pour recueillir les avis sur vos cours ou commenter ceux des autres
+              </p>
+            </div>
+            <div class="card-frame col large-card">
+              <img src="undefined" alt="" class="round-image">
+              <p>
+                Un système de likes pour voir les adaptations les plus populaires, ajouter à vos favoris et montrer
+                votre
+                soutien au créateur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Temoignage -->
+    <section id="testimonies">
+      <div class="container">
+        <div class="col centered">
+          <h2 class="section-title">
+            Témoignages
+          </h2>
+
+          <div class="row wrap">
+            <div class="card-frame col">
+              <div class="row star-holder">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="bold-text">
+                “ J'ai toujours été dépassé pour faire comprendre les cours aux élèves dyslexiques que j'ai rencontré et
+                cette appli m'a beaucoup aidé. ”
+              </p>
+
+              <div class="col">
+                <img src="undefined" alt="" class="round-image">
+                <div class="col">
+                  <span class="bold-text">
+                    Jean Dupont
+                  </span>
+                  <p>
+                    Professeur de Français
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-frame col">
+              <div class="row star-holder">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="bold-text">
+                “ Une application fluide, intuitive et complète. Elle a changé la vie de plusieurs de mes élèves
+                dyslexiques. Je la recommande ! ”
+              </p>
+
+              <div class="col">
+                <img src="undefined" alt="" class="round-image">
+                <div class="col">
+                  <span class="bold-text">
+                    Elise Legrand
+                  </span>
+                  <p>
+                    Professeure de Français
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-frame col">
+              <div class="row star-holder">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="bold-text">
+                “ Application très utile. En tant qu'AESH j'ai pu poster des cours adaptés qui peuvent aider des
+                professeurs en difficulté. ”
+              </p>
+
+              <div class="col">
+                <img src="undefined" alt="" class="round-image">
+                <div class="col">
+                  <span class="bold-text">
+                    Sabine Lafol
+                  </span>
+                  <p>
+                    AESH
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Engagements -->
+    <section id="engagements">
+      <div class="container">
+        <div class="col centered">
+          <h2 class="section-title">
+            Engagements
+          </h2>
+
+          <!-- TODO: trouver comment faire la bulle en haut à gauche de chaque card -->
+          <div class="row wrap">
+            <div class="card-frame col large-card">
+
+              <p>
+                <span class="bold-text">
+                  Une inscription rapide et gratuite
+                </span>
+                pour les professeurs, les parents et les AESH.
+              </p>
+            </div>
+            <div class="card-frame col large-card">
+              <p>
+                <span class="bold-text">
+                  Tout le programme
+                </span>
+                pour chaque niveau couvert, de la primaire au secondaire
+              </p>
+            </div>
+            <div class="card-frame col large-card">
+              <p>
+                <span class="bold-text">
+                  Une application ultra intuitive, accessible
+                </span>
+                aux profils novices comme avancés
+              </p>
+            </div>
+            <div class="card-frame col large-card">
+              <p>
+                <span class="bold-text">
+                  De multiples méthodes
+                </span>
+                pour chaque cours et pour n'importe quel niveau
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section CTA -->
+  <section id="cta-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="section-title">Rejoignez-nous dès aujourd'hui</h2>
+          <p>
+            <span class="bold-text">Télécharger notre application gratuitement</span>
+          </p>
+          <div class="row">
+            <a href="" class="fake-button">
+              <img src="undefined" alt="Google play store">
+            </a>
+            <a href="" class="fake-button">
+              <img src="undefined" alt="App store">
+            </a>
+          </div>
+        </div>
+
+        <img src="" alt="image de téléphone qui vole">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <!-- WIP: Make the footer in Figma and reproduce it here somehow -->
+
+  </footer>
+  <div class="nav-footer">
+    <a href="">Documentation</a>
+    <a href="">Problèmatique</a>
+    <a href="">Ce qu'on propose</a>
+    <a href="">Témoignages</a>
+    <a href="">Engagements</a>
+  </div>
+  <div class="contact">
+    <h2>Contact</h2>
+
+  </div>
+  </footer>
+</body>
+
 </html>

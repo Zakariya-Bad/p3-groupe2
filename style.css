@@ -1,4 +1,104 @@
-html {
-  height: 100%;
-  width: 100%;
+:root {
+  /* Colors */
+  --primary-bg-color: #FFFFFF;
+  --secondary-bg-color: #F0F6FE;
+  --cta-color: #0D66F5;
+  --text-color: #09347A;
+  --icon-color: #8FB8FA;
+
+  /* Fonts */
+  --main-font: "Inter", sans-serif;
+  /* Text sizes */
+  --main-text-size: 16px;
+  --title-text-size: 32px;
+
+  /* Text weights */
+  --regular-text-weight: 400;
+  --semibold-text-weight: 600;
+  --bold-text-weight: 700;
+
+  /* Widths and heights */
+  --normal-card-width: 30%;
+  --large-card-width: 45%;
+  --section-width: 1200px;
+
+  /* Others (shadows etc...) */
+  --card-shadow: 0px 0px 6px #09090950;
+  --round-radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--main-font);
+  font-weight: var(--regular-text-weight);
+  font-size: var(--main-text-size);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.centered {
+  text-align: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.section-title {
+  font-weight: var(--bold-text-weight);
+  font-size: var(--title-text-size);
+  color: var(--cta-color);
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: var(--section-width);
+  margin: auto;
+  padding: 32px 0;
+}
+
+.bold-text {
+  font-weight: var(--semibold-text-weight);
+}
+
+.card-frame {
+  width: var(--normal-card-width);
+  border-radius: var(--round-radius);
+  box-shadow: var(--card-shadow);
+  padding: 12px;
+}
+
+.large-card {
+  width: var(--large-card-width);
+}
+
+.round-image {
+  border-radius: 100%;
+}
+
+.cta-button {
+  color: white;
+  background-color: var(--cta-color);
+  border-radius: var(--round-radius);
+  padding: 12px 24px;
+  width: fit-content;
 }

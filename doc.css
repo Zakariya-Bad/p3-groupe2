@@ -1,7 +1,6 @@
 /* Le code CSS spécifique à la page de documentation */
 
 p {
-
     text-align: center;
 }
 
@@ -14,6 +13,7 @@ h3 {
 h1 {
 
     text-align: center;
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -29,4 +29,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.how-card {
+    justify-content: space-between;
+
+    p {
+        height: 50px;
+    }
 }

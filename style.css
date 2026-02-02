@@ -110,6 +110,7 @@
   border-radius: var(--round-radius);
   box-shadow: var(--card-shadow);
   padding: 10%;
+  corner-shape: scoop;
 
 }
 
@@ -123,6 +124,10 @@
   box-shadow: var(--card-shadow);
   padding: 35px;
   align-items: center;
+
+  p {
+    text-align: center;
+  }
 
 }
 
@@ -143,7 +148,7 @@ nav {
   gap: 100px;
   justify-content: center;
   background-color: var(--cta-color);
-  padding: 40px;
+  align-items: center;
 
   a {
     color: var(--secondary-bg-color);
@@ -230,15 +235,37 @@ h1 {
 }
 
 .logo-size {
-  width: 40px;
+  width: 120px;
 }
 
 footer {
   background-color: var(--cta-color);
   display: flex;
-  gap: 50px;
+  gap: 225px;
+  justify-content: center;
+  color: #F0F6FE;
 }
 
 .nav-footer {
+  display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-btn {
+  background-color: var(--secondary-bg-color);
+  border-radius: var(--round-radius);
+  padding: 12px 24px;
+  width: fit-content;
+  border: white;
+}
+
+textarea {
+  resize: none;
 }

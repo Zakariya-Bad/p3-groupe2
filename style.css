@@ -107,6 +107,7 @@
 }
 
 .card-engagement {
+  position: relative;
   width: 100%;
   border-radius: var(--round-radius);
   box-shadow: var(--card-shadow);
@@ -114,13 +115,14 @@
   corner-shape: scoop;
 
   img {
-    position: relative;
+    position: absolute;
     width: 45px;
     height: 45px;
     /* top: -120px; */
     /* left: -50px; */
-    top: -100%;
-    left: -20%;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -247,7 +249,7 @@ h1 {
 }
 
 .logo-size {
-  width: 120px;
+  width: 105px;
 }
 
 footer {
@@ -272,7 +274,7 @@ footer {
 }
 
 #cta-footer {
-  background-color: #8cccf7;
+  background-color: var(--secondary-bg-color);
 }
 
 .contact-btn {
@@ -292,6 +294,7 @@ footer {
 .border-form {
   border-radius: 10px;
   border: white;
+  color: black;
 }
 
 .padding-form {

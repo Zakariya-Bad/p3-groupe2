@@ -38,3 +38,8 @@ header {
         height: 50px;
     }
 }
+
+.wireframe {
+    display: flex;
+    align-items: center;
+}

@@ -42,6 +42,7 @@ h1 {
 }
 
 h2 {
+
     text-align: center;
 }
 
@@ -63,12 +64,11 @@ header {
     }
 }
 
-<<<<<<< HEAD
 .wireframe {
     display: flex;
     align-items: center;
 }
-=======
+
 iframe {
     width: fit-content;
 }
@@ -99,4 +99,3 @@ iframe {
         gap: 36px;
     }
 }
->>>>>>> 821c77b310a786436089f78ba647c02dcbe3a150

@@ -1,7 +1,32 @@
-/* Le code CSS spécifique à la page de documentation */
+:root {
+    /* Colors */
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F0F6FE;
+    --cta-color: #0D66F5;
+    --text-color: #09347A;
+    --icon-color: #8FB8FA;
 
-p {
-    text-align: center;
+    /* Fonts */
+    --main-font: "Inter", sans-serif;
+
+    /* Text sizes */
+    --main-text-size: 16px;
+    --title-text-size: 32px;
+
+    /* Text weights */
+    --regular-text-weight: 400;
+    --semibold-text-weight: 600;
+    --bold-text-weight: 700;
+
+    /* Widths and heights */
+    --normal-card-width: 30%;
+    --prob-card-width: 75%;
+    --large-card-width: 45%;
+    --section-width: 1080px;
+
+    /* Others (shadows etc...) */
+    --card-shadow: 0px 0px 6px #09090950;
+    --round-radius: 16px;
 }
 
 h3 {
@@ -17,7 +42,6 @@ h1 {
 }
 
 h2 {
-    margin: 100px;
     text-align: center;
 }
 
@@ -36,5 +60,36 @@ header {
 
     p {
         height: 50px;
+    }
+}
+
+iframe {
+    width: fit-content;
+}
+
+
+#et-ensuite {
+    padding: 32px 0px;
+    background-color: var(--text-color);
+
+    h2 {
+        color: var(--primary-bg-color);
+        text-align: center;
+    }
+
+    h3 {
+        color: var(--primary-bg-color);
+        text-align: center;
+        font-weight: 200;
+    }
+
+    p {
+        color: var(--primary-bg-color);
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .gap {
+        gap: 36px;
     }
 }

@@ -7,6 +7,20 @@
   <title>Projet - Documentation</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="doc.css" rel="stylesheet" type="text/css" />
+
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" href="assets/logoo.png">
 </head>
 
 <body>
@@ -75,7 +89,7 @@
         </h2>
 
         <!-- WIP: remplacer le texte -->
-        <p>phrase d'intro ex : nous avons dev trois fonctionnalités etc .. </p>
+        <p>Pour répondre à notre problème, nous avons pensé à trois fonctionnalités principales</p>
 
         <div class="row wrap">
 
@@ -150,14 +164,18 @@
   </section>
 
   <section class="wireframe">
-    <h2 class="section-title">Testez notre application !</h2>
-    <iframe src="https://embed.figma.com/proto/VF0mpA9GBys8qvbopKENsb/Wireframe-projet-groupe-2?node-id=277-1811&p=f&scaling=scale-down&content-scaling=fixed&page-id=85%3A608&starting-point-node-id=277%3A1811&show-proto-sidebar=0&embed-host=share%22
+    <div class="container">
+      <div class="col align-center">
+        <h2 class="section-title">Testez notre application !</h2>
+        <iframe src="https://embed.figma.com/proto/VF0mpA9GBys8qvbopKENsb/Wireframe-projet-groupe-2?node-id=277-1811&p=f&scaling=scale-down&content-scaling=fixed&page-id=85%3A608&starting-point-node-id=277%3A1811&show-proto-sidebar=0&embed-host=share%22
         width=" 390" height="844" style="border-radius: 24px; border: 1px solid rgba(0,0,0,.1);"
-      allowfullscreen></iframe>
+          allowfullscreen></iframe>
+      </div>
+    </div>
   </section>
 
   <!-- Sectioon "Et ensuite ?" -->
-  <section>
+  <section id="et-ensuite">
     <div class="container">
       <!-- et ensuite ? (les évolutions possibles) -->
       <h2 class="section-title">Et ensuite ?</h2>
@@ -166,16 +184,11 @@
       </h3>
 
 
-      <div class="col align-center">
-        <ul>
-          <li>Ajout d'un espace collaboratif (messagerie) entre enseignants et AESH.</li>
-          <li>Possibilité de partager des cours entre professionnels. Personnalisation du niveau de lecture
-            (simplifié,
-            standard, audio).</li>
-          <li>Ajout d'un mode élève avec progression visuelle.</li>
-
-          <li>Etendre l'appli aux autres handicape DYS et couvrir toutes les matières.</li>
-        </ul>
+      <div class="row justify-center gap">
+        
+          <p>Ajout d'un espace collaboratif (messagerie) entre enseignants et AESH.</p>
+          <p>Etendre l'appli aux autres DYS et couvrir toutes les matières.</p>
+        
 
       </div>
     </div>
@@ -194,7 +207,35 @@
     </div>
   </section>
 
+
   <footer>
+
+    <div class="nav-footer">
+      <h2 class="title-foot">Plan du site</h2>
+      <a href="">Documentation</a>
+      <a href="">Problèmatique</a>
+      <a href="">Ce que l'on propose</a>
+      <a href="">Témoignages</a>
+      <a href="">Engagements</a>
+    </div>
+
+    <div class="formulaire">
+      <h2 class="title-foot">Contact</h2>
+      <form class="form" action="">
+        <label for="email">Email</label>
+        <input class="border-form padding-form" type="email" required placeholder="Email">
+        <label for="message">Message</label>
+        <textarea class="border-form" name="Message" id="Message" placeholder="Message"></textarea>
+        <button class="contact-btn">Envoyer</button>
+      </form>
+    </div>
+    <div>
+      <h2 class="title-foot">Nos réseaux sociaux</h2>
+      <i class="fa-brands fa-instagram reseaux"></i>
+      <i class="fa-brands fa-facebook reseaux"></i>
+      <i class="fa-brands fa-x-twitter reseaux"></i>
+      <i class="fa-brands fa-tiktok reseaux"></i>
+    </div>
 
   </footer>
 

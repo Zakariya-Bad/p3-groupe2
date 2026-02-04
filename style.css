@@ -145,6 +145,10 @@
 
 }
 
+.prob-card-frame:hover {
+  background-color: #b9d4fe;
+}
+
 .round-image {
   border-radius: 100%;
 }
@@ -153,7 +157,7 @@
   color: white;
   background-color: var(--cta-color);
   border-radius: var(--round-radius);
-  padding: 12px 24px;
+  padding: 20px 24px;
   width: fit-content;
 }
 
@@ -202,7 +206,7 @@ h1 {
 
 .-text {
   color: var(--cta-color);
-  font-size: 35px;
+  font-size: 45px;
 }
 
 #problematique {
@@ -286,9 +290,21 @@ footer {
   color: black;
 }
 
+.contact-btn:hover {
+  background-color: #8FB8FA;
+}
+
+a:hover {
+  color: #09347A;
+}
+
 .reseaux {
   font-size: 28px;
   margin-right: 15px;
+}
+
+.reseaux:hover {
+  color: #09347A;
 }
 
 .border-form {
@@ -304,6 +320,7 @@ footer {
 textarea {
   resize: none;
 }
+
 
 .title-foot {
   font-size: 22px;

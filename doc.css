@@ -90,7 +90,7 @@ iframe {
     p {
         color: var(--primary-bg-color);
         text-align: center;
-        font-weight: 100;
+        font-weight: 250;
     }
 
     .gap {
